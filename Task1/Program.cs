@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-           
 
+            DeleteFunc();
 
         }
 
@@ -17,7 +17,7 @@
 
             if (Directory.Exists(path)) // Проверим, что директория существует
             {
-                Console.WriteLine(" По данному адресу будут удалены :");
+                Console.WriteLine($" По данному адресу будут удалены все папки  и файлы, которые не использовались с {time} :");
                 Console.WriteLine("Папки:");
                 string[] dirs = Directory.GetDirectories(path);  // Получим все директории из адреса
 
